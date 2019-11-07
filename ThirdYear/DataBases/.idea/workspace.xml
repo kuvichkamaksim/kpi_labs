@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="997c1f74-56d1-487e-8dcb-debcf3b02208" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Northwind.MySQL5" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Employee</find>
+      <find>grant</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Lab6/Northwind.MySQL5.sql" />
+        <option value="$PROJECT_DIR$/Lab6/КувічкаМЄ_лаб6.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ad2845d9-32fb-4acc-bcad-ac5514539c6e/console.sql" />
+        <option value="$PROJECT_DIR$/Lab7/КувічкаМЄ_лаб7.sql" />
+        <option value="$PROJECT_DIR$/Lab8/КувічкаМЄ_лаб8.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="4" />
+    <option name="width" value="1272" />
+    <option name="height" value="692" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataBases" type="8cb6161f:DatabaseProjectViewPane$1$1" />
+              <item name="DataBases" type="5b8f4e1:DatabaseProjectViewPane$1$1$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/" value="MariaDB" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MariaDB" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
+    <property name="settings.editor.selected.configurable" value="database.main2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lab6" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Database" order="0" visible="true" weight="0.13660619" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" weight="0.32897604" />
+      <window_info anchor="bottom" id="Database Changes" order="5" weight="0.32897604" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Console" order="8" visible="true" weight="0.26252723" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.20811099" />
+      <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.2497332" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="das://ad2845d9-32fb-4acc-bcad-ac5514539c6e/schema/northwind/table/Categories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab4/Northwind.MySQL5.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/КувічкаМЄ_лаб2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-589" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab3/КувічкаМЄ_лаб3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1305" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b7ef7a6f-31b7-4d25-83b3-982b3f0acecf/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://ad2845d9-32fb-4acc-bcad-ac5514539c6e/schema/LazyStudent/table/Lessons">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ad2845d9-32fb-4acc-bcad-ac5514539c6e/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="dbSrc:///a48d4331/ad2845d9-32fb-4acc-bcad-ac5514539c6e/schema/LazyStudent/routine/calculateClientDiscount@(int(11)).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///a48d4331/ad2845d9-32fb-4acc-bcad-ac5514539c6e/schema/LazyStudent/routine/IncomePerPeriod@(datetime,datetime).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///a48d4331/ad2845d9-32fb-4acc-bcad-ac5514539c6e/schema/LazyStudent/routine/RegisterUser@(varchar(6),varchar(30),varchar(30),varchar(20),varchar(30),varchar(15),varchar(30),varchar(15)).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab7/КувічкаМЄ_лаб7.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab4/КувічкаМЄ_лаб4.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5/КувічкаМЄ_лаб5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab8/КувічкаМЄ_лаб8.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab6/КувічкаМЄ_лаб6.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab6/Northwind.MySQL5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59535">
+          <caret line="3969" column="12" selection-start-line="3969" selection-start-column="12" selection-end-line="3969" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/ad2845d9-32fb-4acc-bcad-ac5514539c6e.SCHEMA:LazyStudent">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>ad2845d9-32fb-4acc-bcad-ac5514539c6e.SCHEMA:LazyStudent</OriginalElement>
+          <nodes>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Clients</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Subjects</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Rating</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Discounts</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Rating_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Companies_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Users</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Tutors</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Subjects_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Orders_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Tutors_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Lessons</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Users_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Discounts_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Lessons_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Courses</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Courses_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Clients_deleted</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Companies</node>
+            <node x="" y="">ad2845d9-32fb-4acc-bcad-ac5514539c6e.TABLE:LazyStudent.Orders</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.32064128256513025" x="1904.9125000000001" y="1319.359375" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="68133118-ce38-444b-af42-1409ae26bb24" />
+          <option name="name" value="Northwind.MySQL5" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/Lab6/Northwind.MySQL5.sql" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

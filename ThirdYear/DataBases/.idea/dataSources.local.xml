@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="database@localhost" uuid="ad2845d9-32fb-4acc-bcad-ac5514539c6e">
+      <database-info product="MariaDB" version="10.3.14-MariaDB-1:10.3.14+maria~cosmic" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.4.1" dbms="MARIADB" exact-version="10.3.14" exact-driver-version="2.4">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>maksim</user-name>
+      <introspection-schemas>*:@,LazyStudent</introspection-schemas>
+    </data-source>
+    <data-source name="@localhost" uuid="b7ef7a6f-31b7-4d25-83b3-982b3f0acecf">
+      <database-info product="MySQL" version="10.3.14-MariaDB-1:10.3.14+maria~cosmic" jdbc-version="4.2" driver-name="MariaDB connector/J" driver-version="2.2.1" dbms="MARIADB" exact-version="10.3.14" exact-driver-version="2.2">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>maksim</user-name>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
+  </component>
+</project>
