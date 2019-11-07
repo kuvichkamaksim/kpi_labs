@@ -7,7 +7,7 @@ GRANT ALL PRIVILEGES ON DATABASE task3 TO task3;
 \c task3;
 
 CREATE TABLE "Borough" (
-  "id" SERIAL PRIMARY KEY,
+  "id" INT UNIQUE NOT NULL PRIMARY KEY,
   "name" varchar UNIQUE NOT NULL
 );
 
