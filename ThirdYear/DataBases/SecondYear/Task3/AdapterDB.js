@@ -1,5 +1,4 @@
 const { Client } = require('pg');
-const dbConfig = require('./config.js');
 const knex = require('knex');
 
 class AdapterDB {
@@ -37,7 +36,7 @@ class AdapterDB {
     this.connection(table)
       .insert(data)
       .then(res => {
-        console.log(res)
+        console.log("INSERT ROWS 1")
       })
       .catch(e => console.error(e.stack))
   }
@@ -66,6 +65,11 @@ class AdapterDB {
     });
   }
 
+  disconnect() {
+    // this.connection.destroy();
+    console.log("Finish");
+  }
+
 }
 
-module.exports = { AdapterDB };
+module.exports = AdapterDB;

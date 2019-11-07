@@ -18,7 +18,7 @@ const Borough = airBnbRaw
     []
   ).map((area, index)=>({index, name: area}))
 
-const getAreaId = (area) => Borough.find(ar => ar.name === area).index+1;
+const getAreaId = (area) => Borough.find(ar => ar.name === area).index;
 
 const HealthCenter = transform(
   parse(HealthCenterFile, {
