@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS task3;
 CREATE DATABASE task3;
 
 CREATE USER task3 WITH password 'task3';
-GRANT connect ON DATABASE task3 to task3;
+GRANT ALL PRIVILEGES ON DATABASE task3 TO task3;
 
 \c task3;
 
@@ -14,7 +14,7 @@ CREATE TABLE "Borough" (
 CREATE TABLE "Property" (
   "id" SERIAL PRIMARY KEY,
   "area_id" int NOT NULL,
-  "address" varchar,
+  "name" varchar,
   "price" int
 );
 
@@ -32,6 +32,11 @@ CREATE TABLE "HealthCenter" (
   "centerAddress" varchar NOT NULL,
   "phoneNumber" varchar NOT NULL
 );
+
+ALTER TABLE "Borough" OWNER TO task3;
+ALTER TABLE "Property" OWNER TO task3;
+ALTER TABLE "Crimes" OWNER TO task3;
+ALTER TABLE "HealthCenter" OWNER TO task3;
 
 ALTER TABLE "Property" ADD FOREIGN KEY ("area_id") REFERENCES "Borough" ("id");
 
