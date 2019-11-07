@@ -1,0 +1,42 @@
+Name of Borough,Name of Center,Center Address,Postcode,Telephone Number,Latitude,Longitude,Community Board,Council District ,Census Tract,BIN,BBL,NTA,Borough
+Bronx,Bronx-Lebanon Hospital Center,"1276 Fulton Avenue, Suite 401-402",10456,(718) 466-6072,40.831721,-73.903756,3,16,149,2004246,2026120007,Morrisania-Melrose                                                         ,Bronx
+Bronx,Comprehensive Family Care Center,1265 Franklin Avenue,10456,(718) 579-2500 ,40.831025,-73.902698,3,16,149,2004246,2026120007,Morrisania-Melrose                                                         ,Bronx
+Bronx,Dr. Martin Luther King Jr. Health Center,(Montefiore) 1621 Eastchester Road,10461,(718) 503-7714 ,,,,,,,,,Bronx
+Bronx,Montefiore Family Health Center,360 East 193rd Street,10458, (718) 933-2400,40.863191,-73.891056,7,15,39901,2016318,2032750040,Bedford Park-Fordham North                                                 ,Bronx
+Bronx,Montefiore Medical Group Comprehensive HCC,305 East 161st Street,10451,(718) 579-2597 ,40.825265,-73.917445,4,17,173,2115808,2024210045,East Concourse-Concourse Village                                           ,Bronx
+Bronx,Morris Heights Health Center,Morris Heights Health Center,10453,(718) 716-4400 ,,,,,,,,,Bronx
+Bronx,Soundview Health Center,731 White Plains Road,10473,(718) 589-2232 ,40.821254,-73.858098,9,18,16,2092716,2036000004,Soundview-Castle Hill-Clason Point-Harding Park                            ,Bronx
+Bronx,Urban Health Plan,1065 Southern Boulevard,10459, (718) 991-4833,40.825276,-73.891935,2,17,12701,2114609,2027270058,Hunts Point                                                                ,Bronx
+Brooklyn,Bedford/Stuyvesant Family Health Center,1413 Fulton Street,11216,(718) 636-4500,40.680141,-73.94478,3,36,269,3053469,3018540052,Bedford                                                                    ,Brooklyn
+Brooklyn,Brooklyn Plaza Medical Center,650 Fulton Street,11217,(718) 596-9896,40.686819,-73.975701,2,35,35,3059247,3021130022,Fort Greene                                                                ,Brooklyn
+Brooklyn,Brownsville Multi-Service Family Health Center,592 Rockaway Avenue,11212,(718) 345-5000 ,40.66552,-73.90968,16,41,924,3081790,3035600026,Brownsville                                                                ,Brooklyn
+Brooklyn,Community Health Care Network - CABS Health Center,94-98 Manhattan Ave.,11206,(718) 388-0390,40.70552,-73.94464,1,34,505,3071335,3030790006,East Williamsburg                                                          ,Brooklyn
+Brooklyn,Community Health Care Network ,Caribbean House Health Center,11225,(718) 778-0198 ,,,,,,,,,Brooklyn
+Brooklyn,Community Health Care Network ,Dr. Betty Shabazz Health Center,11208,(718) 277-8303 ,,,,,,,,,Brooklyn
+Brooklyn,Ezra Medical Center,571 McDonald Avenue,11213,(718) 686-7600 ,40.639923,-73.978983,12,39,486,3126000,3053700089,Kensington-Ocean Parkway                                                   ,Brooklyn
+Brooklyn,ODA Primary Care Health Center,14-16 Heyward Street,11211,(718) 260-4600 ,40.699929,-73.958822,1,33,537,3061077,3022300004,Williamsburg                                                               ,Brooklyn
+Brooklyn,Sunset Park Family Health Center,150 55th Street,11220,(718) 630-7095 ,40.646941,-74.02093,7,38,22,3014856,3008280001,Sunset Park West                                                           ,Brooklyn
+Brooklyn,Sunset Park Family Health Center,9711 Third Avenue,11209,(718) 759-9126 ,40.615612,-74.034258,10,43,5601,3155833,3061260007,Bay Ridge                                                                  ,Brooklyn
+Brooklyn,Sunset Park Family Health Center Brooklyn-Chinese Family Health Center,812 54th Street,11220,(718) 686-2680 ,40.638557,-74.005531,12,38,106,3139119,3056720011,Sunset Park East                                                           ,Brooklyn
+Brooklyn,Sunset Park Family Health Center Caribbean-American Family Health Center,3414 Church Avenue,12203,(718) 940-9425 ,,,,,,,,,Brooklyn
+Brooklyn,Sunset Park Family Health Center Family Physician Family Health Center,5616 6th Avenue,11220,(718) 439-5440 ,40.640272,-74.011772,7,38,102,3015404,3008400043,Sunset Park East                                                           ,Brooklyn
+Brooklyn,Sunset Park Family Health Center Park Ridge Family Health Center,6317 4th Avenue,11220,(718) 907-8100 ,40.638987,-74.02034,7,38,122,3144058,3058090003,Sunset Park West                                                           ,Brooklyn
+Brooklyn,Sunset Park Family Health Center,220 13th Street,11215,(718) 832-5980 ,40.667602,-73.990051,6,39,141,3339179,3010340068,Park Slope-Gowanus                                                         ,Brooklyn
+Brooklyn,Sunset Park Family Health Center,9000 Shore Road,11209,(718) 630-8878 ,40.622093,-74.040244,10,43,5201,3322532,3060780010,Bay Ridge                                                                  ,Brooklyn
+Brooklyn,Sunset Park Family Health Center,514 49th Street,11220,(718) 854-1851 ,40.645329,-74.009193,7,38,98,3012967,3007840010,Sunset Park East                                                           ,Brooklyn
+Manhattan,Betances Health Center,280 Henry Street,10002,(212) 227-8408 ,40.71395,-73.983537,3,2,202,1003220,1002670010,Lower East Side                                                            ,Manhattan
+Manhattan,Boriken Neighborhood Health Center,2253 Third Avenue,10035,(212) 289-6650 ,40.802079,-73.936989,11,8,194,1054626,1017870001,East Harlem North                                                          ,Manhattan
+Manhattan,Callen-Lorde Community Health Center,356 West 18th Street,10011,(212) 271-7200 ,40.742905,-74.00227,4,3,83,1013088,1007410063,Hudson Yards-Chelsea-Flatiron-Union Square                                 ,Manhattan
+Manhattan,Charles B. Wang Community Health Center,268 Canal Street,10013,(212) 379-6988 ,40.718834,-74.001111,1,1,31,1002344,1001960013,SoHo-TriBeCa-Civic Center-Little Italy                                     ,Manhattan
+Manhattan,Community Health Care Network,79 Madison Avenue,10016,(212) 366-4500 ,40.744096,-73.985619,5,2,74,1016900,1008580022,Midtown-Midtown South                                                      ,Manhattan
+Manhattan,Heritage Health Care,1727 Amsterdam Avenue,10031,(212) 862-0054 ,40.825507,-73.947395,9,7,231,1061339,1020600001,Hamilton Heights                                                           ,Manhattan
+Manhattan,Institute for Urban Family Health,16 East 16th Street,10003,(212) 633-0800 ,40.737122,-73.99218,5,2,52,1016077,1008430039,Hudson Yards-Chelsea-Flatiron-Union Square                                 ,Manhattan
+Manhattan,Ryan/Chelsea-Clinton Community Health Center,645 Tenth Avenue,10036,(212) 265-4500 ,40.761929,-73.993809,4,3,129,1085777,1010747502,Clinton                                                                    ,Manhattan
+Manhattan,Settlement Health & Medical Services,212 East 106th Street,10029,(212) 360-2661,40.791342,-73.944161,11,8,170,1087874,1016550007,East Harlem South                                                          ,Manhattan
+Manhattan,William F. Ryan Community Health Center,110 West 97th Street,10025,(212) 316-7906 ,40.79381,-73.967655,7,7,181,1079308,1018517501,Upper West Side                                                            ,Manhattan
+Queens,Charles B. Wang Community Health Center,136-26 37th Ave - 2nd Fl,11345,(718) 886-1200 ,,,,,,,,,Queens
+Queens,Community Health Care Network,97-04 Sutphin Blvd,11435,(718) 657-7088,40.697162,-73.805689,12,28,208,4214585,4100300006,Jamaica                                                                    ,Queens
+Queens,The Floating Hospital,41-40 27th Street,11101,(718) 784-2240,40.751296,-73.938824,1,26,33,4005006,4004150004,Queensbridge-Ravenswood-Long Island City                                   ,Queens
+Queens,Joseph P. Addabbo Family Health Center,6200 Beach Channel Drive,11692,(718) 634-2155 ,40.593126,-73.7916,14,31,964,4302404,4160150001,Hammels-Arverne-Edgemere                                                   ,Queens
+Queens,Project Samaritan Health Services /,137-50 Jamaica Avenue,11435,(718) 298-5100 ,40.702483,-73.815227,12,24,212,4213644,4099700019,Jamaica                                                                    ,Queens
+Staten Island,Staten Island ,235 Port Richmond Avenue,10302,(718) 876-1732,40.635621,-74.135021,1,49,207,5024241,5010350001,Port Richmond                                                              ,Staten Island
