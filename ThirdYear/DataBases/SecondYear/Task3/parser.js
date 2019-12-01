@@ -2,62 +2,113 @@ const parse = require('csv-parse/lib/sync');
 const transform = require('stream-transform/lib/sync')
 const fs = require('fs');
 
-const CrimesFile = fs.readFileSync('./csv/CrimeSmall.csv');
-const AirBnbFile = fs.readFileSync('./csv/AirBnb.csv');
-const HealthCenterFile = fs.readFileSync('./csv/HealthCenter.csv');
+const AmsterdamFile = fs.readFileSync('./csv/amsterdam.csv');
+const NewYorkFile = fs.readFileSync('./csv/new_york.csv');
+const BerlinFile = fs.readFileSync('./csv/berlin.csv');
 
-const airBnbRaw = parse(AirBnbFile, {
+
+const City = [
+  {
+    index: 0,
+    name: 'Amsterdam', // 0
+  },
+  {
+    index: 1,
+    name: 'Berlin', // 1
+  },
+  {
+    index: 2,
+    name: 'New York', // 2
+  },
+];
+
+const Country = [
+  {
+    index: 0,
+    name: 'USA', // 0
+  },
+  {
+    index: 1,
+    name: 'Germany', // 1
+  },
+  {
+    index: 2,
+    name: 'Netherlands', // 2
+  },
+];
+
+const Type = parse(NewYorkFile, {
   columns: true,
 })
-const Borough = airBnbRaw
   .reduce(
   (accum, apartment) => accum.indexOf(
-    apartment.neighbourhood_group.toUpperCase()) !== -1
+    apartment.room_type.toLowerCase()) !== -1
       ? accum
       : [...accum, apartment.neighbourhood_group.toUpperCase()],
     []
   ).map((area, index)=>({index, name: area}))
 
-const getAreaId = (area) => Borough.find(ar => ar.name === area).index;
+const getTypeId = (room_type) => Type.find(type => type.type === room_type.toUpperCase()).index;
 
-const HealthCenter = transform(
-  parse(HealthCenterFile, {
-    columns: true,
-  }),
-   (record) => ({
-    area_id: getAreaId(record['Borough'].toUpperCase()),
-    centerName: record['Name of Center'],
-    centerAddress: record['Center Address'],
-    phoneNumber: record['Telephone Number']
-   })
- )
+const getCountryId = (country_name) => Country.find(country => country.name === country_name.toUpperCase()).index;
 
-const Crimes = transform(
-  parse(CrimesFile, {
+const getCityId = (city_name) => City.find(city => city.name === city_name.toUpperCase()).index;
+
+const newYork = transform(
+  parse(NewYorkFile, {
     columns: true,
   }),
   (record) => ({
-    area_id: getAreaId(record.BORO_NM.toUpperCase()),
-    description: record.OFNS_DESC,
-    date: (() => {
-      const arr = record.CMPLNT_FR_DT.split('/');
-      return [arr[2], arr[0], arr[1]].join('-');
-    })()
-  })
-)
-
-const Property = transform(
-  airBnbRaw,
-  (record) => ({
-      area_id: getAreaId(record.neighbourhood_group.toUpperCase()),
       name: record.name,
+      neighbourhood: record.neighbourhood_group,
+      city_id: getCityId('New York'),
+      county_id: getCountryId('USA'),
+      host_name: record.host_name,
+      description: null,
+      type_id: getTypeId(record.room_type),
+      minimum_nights: record.minimum_nights,
+      price: record.price,
+      picture_url: null,
       price: record.price
   })
-  )
+);
 
-// console.log(areas[0])
-// console.log(crimes[0])
-// console.log(airBnb[0])
-// console.log(healthCenters[0])
+const berlin = transform(
+  parse(BerlinFile, {
+    columns: true,
+  }),
+  (record) => ({
+    name: record.name,
+    neighbourhood: record.neighborhood,
+    city_id: getCityId('Berlin'),
+    county_id: getCountryId('Germany'),
+    host_name: record.host_name,
+    description: null,
+    type_id: getTypeId(record.room_type),
+    minimum_nights: record.minimum_nights,
+    price: record.price,
+    picture_url: null,
+  })
+);
 
-module.exports = { Borough, Crimes, Property, HealthCenter };
+const amsterdam = transform(
+  parse(AmsterdamFile, {
+    columns: true,
+  }),
+  (record) => ({
+    name: record.name,
+    neighbourhood: record.neighborhood,
+    city_id: getCityId('Amsterdam'),
+    county_id: getCountryId(record.country),
+    host_name: record.host_name,
+    description: record.description,
+    type_id: getTypeId(record.room_type),
+    minimum_nights: record.minimum_nights,
+    price: record.price,
+    picture_url: record.picture_url,
+  })
+);
+
+const Property = [...newYork, ...berlin, ...amsterdam]
+
+module.exports = { Property, City, Type, Country };
