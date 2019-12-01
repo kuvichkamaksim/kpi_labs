@@ -1,45 +1,34 @@
-DROP DATABASE IF EXISTS task3;
-CREATE DATABASE task3;
+CREATE TABLE "Type" (
+  "type_id" SERIAL PRIMARY KEY,
+  "type" varchar UNIQUE NOT NULL
+);
 
-CREATE USER task3 WITH password 'task3';
-GRANT ALL PRIVILEGES ON DATABASE task3 TO task3;
+CREATE TABLE "City" (
+  "city_id" SERIAL PRIMARY KEY,
+  "name" varchar NOT NULL
+);
 
-\c task3;
-
-CREATE TABLE "Borough" (
-  "id" INT UNIQUE NOT NULL PRIMARY KEY,
+CREATE TABLE "Country" (
+  "country_id" SERIAL PRIMARY KEY,
   "name" varchar UNIQUE NOT NULL
 );
 
 CREATE TABLE "Property" (
   "id" SERIAL PRIMARY KEY,
-  "area_id" int NOT NULL,
-  "name" varchar,
-  "price" int
-);
-
-CREATE TABLE "Crimes" (
-  "id" SERIAL PRIMARY KEY,
-  "area_id" int NOT NULL,
+  "name" varchar NOT NULL,
+  "neighbourhood" varchar,
+  "city_id" int NOT NULL,
+  "country_id" varchar NOT NULL,
+  "host_name" varchar NOT NULL,
   "description" varchar,
-  "date" date NOT NULL
+  "type_id" varchar NOT NULL,
+  "minimum_nights" int,
+  "price" float NOT NULL,
+  "picture_url" varchar
 );
 
-CREATE TABLE "HealthCenter" (
-  "id" SERIAL PRIMARY KEY,
-  "area_id" int NOT NULL,
-  "centerName" varchar NOT NULL,
-  "centerAddress" varchar NOT NULL,
-  "phoneNumber" varchar NOT NULL
-);
+ALTER TABLE "Country" ADD FOREIGN KEY ("country_id") REFERENCES "Property" ("country_id");
 
-ALTER TABLE "Borough" OWNER TO task3;
-ALTER TABLE "Property" OWNER TO task3;
-ALTER TABLE "Crimes" OWNER TO task3;
-ALTER TABLE "HealthCenter" OWNER TO task3;
+ALTER TABLE "City" ADD FOREIGN KEY ("city_id") REFERENCES "Property" ("city_id");
 
-ALTER TABLE "Property" ADD FOREIGN KEY ("area_id") REFERENCES "Borough" ("id");
-
-ALTER TABLE "Crimes" ADD FOREIGN KEY ("area_id") REFERENCES "Borough" ("id");
-
-ALTER TABLE "HealthCenter" ADD FOREIGN KEY ("area_id") REFERENCES "Borough" ("id");
+ALTER TABLE "Type" ADD FOREIGN KEY ("type_id") REFERENCES "Property" ("type_id");
