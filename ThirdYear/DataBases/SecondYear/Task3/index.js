@@ -5,9 +5,10 @@ const parser = require('./parser');
 const db = new AdapterDB(dbConfig);
 
 for (let table in parser) {
-  if (table === "Borough") {
+  if (table !== "Property") {
     for (let row of parser[table]) {
-      const obj = {id: row.index, name: row.name };
+      const {index, ...tuple} = row;
+      const obj = {id: index, ...tuple };
       db.insert(table, obj);
     }
   } else {

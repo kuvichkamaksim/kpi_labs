@@ -109,6 +109,6 @@ const amsterdam = transform(
   })
 );
 
-const Property = [...newYork, ...berlin, ...amsterdam]
+const Property = [...newYork, ...berlin, ...amsterdam];
 
 module.exports = { Property, City, Type, Country };
