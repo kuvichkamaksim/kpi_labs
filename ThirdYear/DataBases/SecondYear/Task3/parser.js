@@ -44,15 +44,15 @@ const Type = parse(NewYorkFile, {
   (accum, apartment) => accum.indexOf(
     apartment.room_type.toLowerCase()) !== -1
       ? accum
-      : [...accum, apartment.neighbourhood_group.toUpperCase()],
+      : [...accum, apartment.room_type.toUpperCase()],
     []
-  ).map((area, index)=>({index, name: area}))
+  ).map((area, index)=>({index, name: area}));
 
-const getTypeId = (room_type) => Type.find(type => type.type === room_type.toUpperCase()).index;
+const getTypeId = (room_type) => Type.find(type => type.name.toUpperCase() === room_type.toUpperCase()).index;
 
-const getCountryId = (country_name) => Country.find(country => country.name === country_name.toUpperCase()).index;
+const getCountryId = (country_name) => Country.find(country => country.name.toUpperCase() === country_name.toUpperCase()).index;
 
-const getCityId = (city_name) => City.find(city => city.name === city_name.toUpperCase()).index;
+const getCityId = (city_name) => City.find(city => city.name.toUpperCase() === city_name.toUpperCase()).index;
 
 const newYork = transform(
   parse(NewYorkFile, {
@@ -62,7 +62,7 @@ const newYork = transform(
       name: record.name,
       neighbourhood: record.neighbourhood_group,
       city_id: getCityId('New York'),
-      county_id: getCountryId('USA'),
+      country_id: getCountryId('USA'),
       host_name: record.host_name,
       description: null,
       type_id: getTypeId(record.room_type),
@@ -81,7 +81,7 @@ const berlin = transform(
     name: record.name,
     neighbourhood: record.neighborhood,
     city_id: getCityId('Berlin'),
-    county_id: getCountryId('Germany'),
+    country_id: getCountryId('Germany'),
     host_name: record.host_name,
     description: null,
     type_id: getTypeId(record.room_type),
@@ -99,7 +99,7 @@ const amsterdam = transform(
     name: record.name,
     neighbourhood: record.neighborhood,
     city_id: getCityId('Amsterdam'),
-    county_id: getCountryId(record.country),
+    country_id: getCountryId("Netherlands"),
     host_name: record.host_name,
     description: record.description,
     type_id: getTypeId(record.room_type),
@@ -111,4 +111,4 @@ const amsterdam = transform(
 
 const Property = [...newYork, ...berlin, ...amsterdam];
 
-module.exports = { Property, City, Type, Country };
+module.exports = { City, Type, Country, Property };

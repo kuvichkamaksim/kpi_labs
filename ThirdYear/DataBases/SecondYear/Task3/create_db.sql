@@ -1,15 +1,15 @@
 CREATE TABLE "Type" (
-  "type_id" SERIAL PRIMARY KEY,
-  "type" varchar UNIQUE NOT NULL
+  "id" INT NOT NULL PRIMARY KEY,
+  "name" varchar NOT NULL
 );
 
 CREATE TABLE "City" (
-  "city_id" SERIAL PRIMARY KEY,
+  "id" INT NOT NULL PRIMARY KEY,
   "name" varchar NOT NULL
 );
 
 CREATE TABLE "Country" (
-  "country_id" SERIAL PRIMARY KEY,
+  "id" INT NOT NULL PRIMARY KEY,
   "name" varchar UNIQUE NOT NULL
 );
 
@@ -17,18 +17,12 @@ CREATE TABLE "Property" (
   "id" SERIAL PRIMARY KEY,
   "name" varchar NOT NULL,
   "neighbourhood" varchar,
-  "city_id" int NOT NULL,
-  "country_id" varchar NOT NULL,
+  "city_id" int NOT NULL REFERENCES "City"(id),
+  "country_id" INT NOT NULL REFERENCES "Country"(id),
   "host_name" varchar NOT NULL,
   "description" varchar,
-  "type_id" varchar NOT NULL,
+  "type_id" INT NOT NULL REFERENCES "Type"(id),
   "minimum_nights" int,
   "price" float NOT NULL,
   "picture_url" varchar
 );
-
-ALTER TABLE "Country" ADD FOREIGN KEY ("country_id") REFERENCES "Property" ("country_id");
-
-ALTER TABLE "City" ADD FOREIGN KEY ("city_id") REFERENCES "Property" ("city_id");
-
-ALTER TABLE "Type" ADD FOREIGN KEY ("type_id") REFERENCES "Property" ("type_id");

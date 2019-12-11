@@ -56,11 +56,10 @@ class AdapterDB {
       client: 'pg',
       version: '7.2',
       connection: {
-        user: config.PGUSER,
-        host: config.PGHOST,
-        database: config.PGDATABASE,
-        password: config.PGPASSWORD,
-        port: config.PGPORT,
+        user: "dimanadko",
+        host: 'localhost',
+        database: "lab3",
+        port: "5432",
       }
     });
   }
