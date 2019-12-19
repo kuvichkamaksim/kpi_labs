@@ -56,9 +56,9 @@ class AdapterDB {
       client: 'pg',
       version: '7.2',
       connection: {
-        user: "dimanadko",
+        user: "itjet",
         host: 'localhost',
-        database: "lab3",
+        database: "task3",
         port: "5432",
       }
     });

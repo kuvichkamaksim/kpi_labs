@@ -37,7 +37,7 @@ const Country = [
   },
 ];
 
-const Type = parse(NewYorkFile, {
+const TypeArr = parse(NewYorkFile, {
   columns: true,
 })
   .reduce(
@@ -46,7 +46,8 @@ const Type = parse(NewYorkFile, {
       ? accum
       : [...accum, apartment.room_type.toUpperCase()],
     []
-  ).map((area, index)=>({index, name: area}));
+  );
+const Type = Array.from(new Set(TypeArr)).map((area, index)=>({index, name: area}));
 
 const getTypeId = (room_type) => Type.find(type => type.name.toUpperCase() === room_type.toUpperCase()).index;
 

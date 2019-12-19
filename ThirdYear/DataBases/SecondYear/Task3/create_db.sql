@@ -1,11 +1,11 @@
 CREATE TABLE "Type" (
   "id" INT NOT NULL PRIMARY KEY,
-  "name" varchar NOT NULL
+  "name" varchar UNIQUE NOT NULL
 );
 
 CREATE TABLE "City" (
   "id" INT NOT NULL PRIMARY KEY,
-  "name" varchar NOT NULL
+  "name" varchar UNIQUE NOT NULL
 );
 
 CREATE TABLE "Country" (
