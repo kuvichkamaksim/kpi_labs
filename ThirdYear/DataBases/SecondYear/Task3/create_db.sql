@@ -24,5 +24,6 @@ CREATE TABLE "Property" (
   "type_id" INT NOT NULL REFERENCES "Type"(id),
   "minimum_nights" int,
   "price" float NOT NULL,
-  "picture_url" varchar
+  "picture_url" varchar,
+  "creation_date" DATE
 );

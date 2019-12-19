@@ -68,9 +68,9 @@ const newYork = transform(
       description: null,
       type_id: getTypeId(record.room_type),
       minimum_nights: record.minimum_nights,
-      price: record.price,
       picture_url: null,
-      price: record.price
+      price: record.price,
+    creation_date: record.last_review,
   })
 );
 
@@ -89,6 +89,7 @@ const berlin = transform(
     minimum_nights: record.minimum_nights,
     price: record.price,
     picture_url: null,
+    creation_date: record.last_review,
   })
 );
 
@@ -107,6 +108,7 @@ const amsterdam = transform(
     minimum_nights: record.minimum_nights,
     price: record.price,
     picture_url: record.picture_url,
+    creation_date: record.last_review,
   })
 );
 
