@@ -1,29 +1,42 @@
+DROP DATABASE IF EXISTS task3;
+CREATE DATABASE task3;
+
+\c task3;
+
 CREATE TABLE "Type" (
   "id" INT NOT NULL PRIMARY KEY,
-  "name" varchar UNIQUE NOT NULL
+  "name" VARCHAR UNIQUE NOT NULL
 );
 
 CREATE TABLE "City" (
   "id" INT NOT NULL PRIMARY KEY,
-  "name" varchar UNIQUE NOT NULL
+  "name" VARCHAR UNIQUE NOT NULL
 );
 
 CREATE TABLE "Country" (
   "id" INT NOT NULL PRIMARY KEY,
-  "name" varchar UNIQUE NOT NULL
+  "name" VARCHAR UNIQUE NOT NULL
+);
+
+CREATE TABLE "Continent" (
+  "id" INT NOT NULL PRIMARY KEY,
+  "name" VARCHAR UNIQUE NOT NULL
 );
 
 CREATE TABLE "Property" (
   "id" SERIAL PRIMARY KEY,
-  "name" varchar NOT NULL,
-  "neighbourhood" varchar,
-  "city_id" int NOT NULL REFERENCES "City"(id),
+  "name" VARCHAR NOT NULL,
+  "neighbourhood" VARCHAR,
+  "city_id" INT NOT NULL REFERENCES "City"(id),
   "country_id" INT NOT NULL REFERENCES "Country"(id),
-  "host_name" varchar NOT NULL,
-  "description" varchar,
+  "continent_id" INT NOT NULL REFERENCES "Continent"(id),
+  "host_name" VARCHAR NOT NULL,
+  "description" VARCHAR,
   "type_id" INT NOT NULL REFERENCES "Type"(id),
-  "minimum_nights" int,
-  "price" float NOT NULL,
-  "picture_url" varchar,
-  "creation_date" DATE
+  "minimum_nights" INT,
+  "price" FLOAT NOT NULL,
+  "picture_url" VARCHAR,
+  "availability_365" INT,
+  "reviews_per_month" FLOAT,
+  "creation_date" DATE DEFAULT CURRENT_DATE
 );
