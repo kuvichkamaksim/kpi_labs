@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ParallelProgramming">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Lab3.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Lab1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
