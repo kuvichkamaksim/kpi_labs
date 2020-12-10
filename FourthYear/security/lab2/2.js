@@ -19,20 +19,10 @@ a59a0e6c462cf83113bd8bb31238e6be67c42bcded09ff4916f262c2e3c087c897085ae8a76019bc
 
 const specSymbols = [32, 33, 44, 46];
 
-const getHexLetterFromString = (string, index) => parseInt(string.substring(index, index + 2), 16);
-
 const convertStringToHex = (string) => string
   .split('')
   .map((_, i) => string.charCodeAt(i).toString(16))
   .join('');
-
-const convertHexToString = (hex) => {
-  let result = '';
-  for (let i = 0; i < hex.length; i += 2)
-      result += String.fromCharCode(getHexLetterFromString(hex, i));
-
-  return result;
-};
 
 const xorStrings = (string1, string2, returnHex) => {
   const bytesArray1 = Uint8Array.from(Buffer.from(string1, 'hex'));
@@ -56,9 +46,8 @@ const iterateCheckWordThroughInputXor = (hexMessages, hexKey) => {
 
     const isOnlyTextAndSpecSymbols = decryptedText.split('').every((symbol) => 
       specSymbols.includes(symbol.charCodeAt()) || (symbol.charCodeAt() >= 65 && symbol.charCodeAt() <= 122));
-    if (isOnlyTextAndSpecSymbols) {
-      console.log(decryptedText.length ? decryptedText : 'Empty line here!!');
-    }
+    
+      isOnlyTextAndSpecSymbols && console.log(decryptedText);
   }
 };
 
