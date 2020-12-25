@@ -19,12 +19,6 @@ class MersenneTwister():
                     + i)
 
     @staticmethod
-    def from_states(states):
-        mt = MersenneTwister(0)
-        mt.states = map(MersenneTwister.untemper, states)
-        return  mt
-
-    @staticmethod
     def temper(y):
         y ^= (y >> 11)
         y ^= (y << 7) & 0x9d2c5680
@@ -52,8 +46,6 @@ class MersenneTwister():
 
         return value
 
-
-PLAYER_ID = 221
 FINISH_AMOUNT = 1000000
 
 
@@ -79,16 +71,13 @@ class MakeMeRich():
     def bet(self, id, amount=1, mode='Mt', number=1):
         r = requests.get('http://95.217.177.249/casino/play'+mode+'?id='+id+'&bet='+str(amount)+'&number='+str(number)).json()
         print(r)
-        self.numberList.append(r['realNumber'])
-        if(len(self.numberList)>3):
-            self.numberList.pop(0)
         self.money = r['account']['money']
         return r['realNumber'], r['account']['deletionTime'], self.money,
 
     def initial_start(self, id='1'):
         real_number, del_time, money = self.bet(id=id)
         curr_time = int(dateutil.parser.parse(del_time).timestamp())
-        for i in range(-3610, 0):
+        for i in range(-4000, 4000):
             generator = MersenneTwister(curr_time+i)
             value = generator.next()
             if(int(value) == real_number):
